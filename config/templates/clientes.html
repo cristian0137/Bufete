@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar cliente</title>
+</head>
+<body>
+    <h1>Registro del cliente</h1>
+    <form id="libro-form">
+        <label for="nombre">Ingrese el nombre del cliente:</label>
+        <input type="text" id="nombre" name="nombre" >
+        <br><br>
+        <label for="apellido">Ingrese el apellido del cliente:</label>
+        <input type="text" id="apellido" name="apellido" >
+        <br><br>
+        <label for="direccion">Ingrese la direccion del cliente:</label>
+        <input type="text" id="direccion" name="direccion" >
+        <br><br>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <p id="mensaje"></p>
+    <script src="{{url_for('static', filename='/js/cliente.js')}}"></script>
+
+</body>
+</html>
